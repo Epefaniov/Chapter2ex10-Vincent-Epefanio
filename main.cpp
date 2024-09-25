@@ -17,15 +17,20 @@
 using namespace std;
 int main() 
 {
-const int gallons = 15;
-const int milesDriven = 375;
-
-double mpg = static_cast<double>(milesDriven) / gallons;
-  std::cout << "Miles per gallon: " << mpg << std::endl;
+double gallons;
+double milesDriven;
 
 
+  std::cout << "Enter the number of gallons: ";
+  std::cin >> gallons;
+  std::cout << "Enter the number of miles driven: ";
+  std::cin >> milesDriven;
+  double mpg = milesDriven / gallons;
+  
+  std::cout << "Miles per gallon (MPG): " << mpg << std::endl;  
 
-return 0;
+  
+  return 0;
 }
 
 
